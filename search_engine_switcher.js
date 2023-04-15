@@ -3,7 +3,7 @@
 // @name:zh-CN          搜索引擎切换
 // @description         Switch search engines between Google, Baidu, and Bing.
 // @description:zh-CN   切换搜索引擎为Google, Baidu, 和Bing.
-// @namespace           https://github.com/Danny-Yxzl/browser_scripts
+// @namespace           https://github.com/yxzlwz/browser_scripts
 // @updateURL           https://ghproxy.com/https://raw.githubusercontent.com/Danny-Yxzl/browser_scripts/master/search_engine_switcher.js
 // @author              异想之旅
 // @match               *://*.bing.com/*

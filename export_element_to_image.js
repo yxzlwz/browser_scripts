@@ -24,7 +24,7 @@ GM_xmlhttpRequest({
 function exportElementAsImage(element_selector, filename = "image.png") {
     const element = document.querySelector(element_selector);
     let canvas;
-    html2canvas(element).then(_canvas => {
+    html2canvas(element, { useCORS: true }).then(_canvas => {
         canvas = _canvas;
         document.body.appendChild(canvas);
         const image = new Image();

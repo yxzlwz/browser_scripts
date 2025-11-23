@@ -5,7 +5,7 @@
 // @description         Right-click on a blank area of the page to copy the current page's title and URL as a Markdown formatted link to the clipboard.
 // @description:zh-CN   在页面中空白位置右键，将当前页面的标题和 URL 以 Markdown 格式复制到剪贴板。
 // @namespace           https://github.com/yxzlwz/browser_scripts
-// @updateURL           https://raw.githubusercontent.com/Danny-Yxzl/browser_scripts/master/copy_url_as_markdown_link.js
+// @downloadURL         https://raw.githubusercontent.com/yxzlwz/browser_scripts/master/copy_url_as_markdown_link.js
 // @author              yxzlwz
 // @match               *://*/*
 // @grant               GM_registerMenuCommand

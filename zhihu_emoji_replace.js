@@ -4,8 +4,8 @@
 // @namespace    https://github.com/yxzlwz/browser_scripts
 // @description  恢复知乎旧版本惊喜表情。作者：知乎用户momo；原帖地址：https://zhuanlan.zhihu.com/p/1997308999595483524
 // @match        https://*.zhihu.com/*
-// @downloadURL  https://raw.githubusercontent.com/yxzlwz/browser_scripts/master/zhihu_emoji_replace.js
-// @updateURL    https://raw.githubusercontent.com/yxzlwz/browser_scripts/master/zhihu_emoji_replace.js
+// @downloadURL  https://raw.githubusercontent.com/yxzlwz/browser_scripts/refs/heads/master/zhihu_emoji_replace.js
+// @updateURL    https://raw.githubusercontent.com/yxzlwz/browser_scripts/refs/heads/master/zhihu_emoji_replace.js
 // @grant        none
 // @version      1.0.0
 // ==/UserScript==

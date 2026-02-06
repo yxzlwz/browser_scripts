@@ -10,19 +10,17 @@
 // @match               *://*.google.com/*
 // @match               *://*.google.com.hk/*
 // @run-at              document-end
-// @version             1.0.0
+// @version             1.1.0
 // ==/UserScript==
 
 (function () {
-    let interval,
-        times = 0;
-    function main() {
-        const list = window.document.getElementsByTagName("a");
+    function main(node) {
+        const list = node.getElementsByTagName("a");
         for (let i = 0; i < list.length; i++) {
             const a = list[i];
             if (a.href.startsWith("https://blog.csdn.net/")) {
                 let parent = a;
-                for (let j = 0; j < 8; j++) {
+                for (let j = 0; j < 5; j++) {
                     parent = parent.parentElement;
                 }
                 if (parent) {
@@ -30,11 +28,21 @@
                 }
             }
         }
-        times++;
-        if (times > 15) {
-            clearInterval(interval);
-        }
     }
-    main();
-    interval = setInterval(main, 200);
+    main(window.document);
+
+    const observer = new MutationObserver(mutations => {
+        for (const m of mutations) {
+            m.addedNodes.forEach(node => {
+                if (node.nodeType === Node.ELEMENT_NODE) {
+                    main(node);
+                }
+            });
+        }
+    });
+
+    observer.observe(window.document.body, {
+        childList: true,
+        subtree: true,
+    });
 })();

@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Gradescope Time Display Optimizer
-// @version      1.1
+// @version      1.2
 // @namespace    https://github.com/yxzlwz/browser_scripts
 // @updateURL    https://raw.githubusercontent.com/yxzlwz/browser_scripts/master/gradescope_time_display_optimizer.js
 // @downloadURL  https://raw.githubusercontent.com/yxzlwz/browser_scripts/master/gradescope_time_display_optimizer.js
@@ -123,13 +123,14 @@
         const now = new Date();
         const sameYear = date.getFullYear() === now.getFullYear();
 
+        const weekday = date.toLocaleString('en-US', { weekday: 'short' });
         const month = date.toLocaleString('en-US', { month: 'short' });
         const day = date.getDate();
         const hour = String(date.getHours()).padStart(2, '0');
         const minute = String(date.getMinutes()).padStart(2, '0');
 
-        if (sameYear) return `${month} ${day}, ${hour}:${minute}`;
-        return `${month} ${day}, ${date.getFullYear()}, ${hour}:${minute}`;
+        if (sameYear) return `${weekday}, ${month} ${day}, ${hour}:${minute}`;
+        return `${weekday}, ${month} ${day}, ${date.getFullYear()}, ${hour}:${minute}`;
     }
 
     function getKind(el) {

@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name        Copy URL as Markdown Link
 // @name:zh-CN  复制 Markdown 链接
-// @description Copy URL as Markdown Link
+// @description Copy URL as Markdown Link format
+// @description:zh-CN  复制 Markdown 格式链接
 // @version     1.0.2
 // @namespace   https://github.com/yxzlwz/browser_scripts
 // @downloadURL https://raw.githubusercontent.com/Danny-Yxzl/browser_scripts/master/copy_url_as_markdown_link.js
